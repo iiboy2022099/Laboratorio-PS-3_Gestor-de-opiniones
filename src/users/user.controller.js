@@ -19,6 +19,26 @@ export const getUsers = async (req, res) => {
     });
 }
 
+export const updateUser = async (req, res = response) => {
+    const {id} = req.params;
+    const {_id, password, correo, ...rest} = req.body;
+
+    if(password){
+        const salt = bcryptjs.genSaltSync();
+        rest.password = bcryptjs.hashSync(password, salt);
+
+    }
+
+    await User.findByIdAndUpdate(id, rest);
+
+    const user = await User.findOne({_id: id});
+
+    res.status(200).json({
+        msg: 'Updated User',
+        user,
+    });
+}
+
 export const userPost = async (req, res) => {
     const { nombre, correo, password } = req.body;
     const user = new User({ nombre, correo, password });

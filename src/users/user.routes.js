@@ -2,9 +2,11 @@ import { Router } from "express";
 import { check } from "express-validator";
 import {
     userPost,
-    getUsers 
+    getUsers,
+    updateUser
 } from "./user.controller.js";
 import {
+    existeUsuarioById,
     existenteEmail,
 } from "../helpers/db-validators.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
@@ -26,6 +28,17 @@ router.post(
         validarCampos,
     ],
     userPost 
+);
+
+router.put(
+    "/:id",
+    [
+        check("id", "This is not a valid ID").isMongoId(),
+        check("id").custom(existeUsuarioById),
+        validarCampos,
+    ],
+    updateUser
+
 );
 
 
