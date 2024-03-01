@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "authColletion",
+    "dateExported": "2024-03-01T17:20:00.560Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "16dab421-3586-4020-bbb1-87b88f9e3fb1",
+            "colId": "fc913c35-6026-4732-ba94-a7ca6d66d6bc",
+            "containerId": "",
+            "name": "authPost",
+            "url": "http://localhost:3000/gestorSystem/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T17:06:21.009Z",
+            "modified": "2024-03-01T17:11:52.177Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\":\"jperez1978@kinal.edu.gt\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
