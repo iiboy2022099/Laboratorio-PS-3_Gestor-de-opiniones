@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "65e0c54b6e114f3080f9febe"
+  },
+  "nombre": "Ignacio J Iboy",
+  "correo": "iiboy-2022099@kinal.edu.gt",
+  "password": "$2a$10$V9hHc8NKsm2Hhz1YvM9tNu37bZNSBo1A6xoMU.2n4dg0A5yka99PG",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e1d4226ed8310b08305599"
+  },
+  "nombre": " Jose Iboy L",
+  "correo": "jiboy-2022099@kinal.edu.gt",
+  "password": "$2a$10$PWLFicwOUEqw807GUv6ajelu5/R0i5RatSRKYhz/xwSaprenUfBXC",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e1dd3fad5c0e38d4f31b08"
+  },
+  "nombre": "Juanito Torres",
+  "correo": "jperez1978@kinal.edu.gt",
+  "password": "$2a$10$cDQZb9E.3NX2cqvkDGqRsONtZR2Ztc1q2kLvBDhStDP9xOqGEzzCm",
+  "estado": true,
+  "__v": 0
+}]
